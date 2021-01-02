@@ -10,17 +10,17 @@
 ## 2.配置说明
 在指定配置目录下，创建`xxx.json`文件（必须以.json结尾）。文件内容可以复制demo.json之后再修改。
 
-```json
+```
 {
-  "quartie": [ //响应分位，顺序必须从小到大
+  "quartie": [                  //响应分位，顺序必须从小到大
     {"percent":10, "sleep":50}, //10%的请求会在50ms内返回
     {"percent":50, "sleep":200}, 
     {"percent":75, "sleep":300},
     {"percent":90, "sleep":400},
     {"percent":99, "sleep":1200} //99%的请求会在1200ms内返回
   ],
-  "path": "/demo",  //path
-  "res": {          //访问此path后返回的内容，这个{}内的内容可以自定义
+  "path": "/demo",              //path
+  "res": {                      //访问此path后返回的内容，这个{}内的内容可以自定义
     "errno": 0,
     "errmsg": "success",
     "data": {
@@ -57,7 +57,7 @@ curl http://127.0.0.1:8179/demo
 ```
 
 返回
-```json
+```
 {
   "errno": 0,
     "errmsg": "success",
