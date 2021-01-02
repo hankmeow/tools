@@ -44,7 +44,7 @@ func (config Config) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(200)
 	b, _ := json.Marshal(config.Res)
-	w.Write(b)
+	_, _ = w.Write(b)
 }
 
 var configList []Config
