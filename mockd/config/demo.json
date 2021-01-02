@@ -1,0 +1,17 @@
+{
+  "quartie": [
+    {"percent":10, "sleep":50},
+    {"percent":50, "sleep":200},
+    {"percent":75, "sleep":300},
+    {"percent":90, "sleep":400},
+    {"percent":99, "sleep":1200}
+  ],
+  "path": "/demo",
+  "res": {
+    "errno": 0,
+    "errmsg": "success",
+    "data": {
+      "a": "b"
+    }
+  }
+}
